@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bishop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="./app.js" class="js">
+</head>
+
+<body>
+    <a class="whatsapp-icon" href="https://api.whatsapp.com/send?phone=6369437154" target="_blank">
+
+        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"
+            style="fill:#ffffff"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+                d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z">
+            </path>
+        </svg>
+    </a>
+    <a class="telegram-icon" href="tel:+919500801223" target="_blank">
+        <i class="fa-solid fa-phone"></i>
+    </a>
+   
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #525271;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ms-auto cal" id="navbarNav">
+                    <ul class="navbar-nav mx-auto gap-4 ">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" style="color: #ffffff;"
+                                href="./grievance.html">Grievance</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #ffffff;" href="./iqac.html">IQAC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #ffffff;" href="./alumini.html">Alumni</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #ffffff;"
+                                href="https://csibacas.org/files/E-Broucher2023.pdf">Download E-Brouchers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #ffffff;" href="./admission.html">Admission Form
+                                2025-2026</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="logoContainer">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col">
+                        <div class="logoBody row ">
+                            <figure class="logoImage col-lg-12 col-md-3 col-md-6">
+                                <img src="./assests/image/main logo.png" alt="" class="">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #525271;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <ul class="navbar-nav mx-auto gap-2"
+                        style="font-family: Roboto; font-size: 1rem; justify-content: center; align-items: center;">
+                        <li class="nav-item">
+                            <a class="nav-link " style="color: #ffffff;" aria-current="page"
+                                href="./index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown" >
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" style="color: #ffffff;">
+                                About Us
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./about.html">Aims & Objective</a></li>
+                                <li><a class="dropdown-item" href="./management.html">Management</a></li>
+                            </ul>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" style="color: #ffffff;" href="./about.html">About Us</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #ffffff;" href="./courses.html"> Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #ffffff;" href="./faculty.html">Faculty Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #ffffff;" href="./facilaites.html">Facilities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #ffffff;" href="./activites.html"> Activities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #ffffff;" href="#"> Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #ffffff;" href="./placement.html">Placement</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #ffffff;" href="#">Event</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #ffffff;" href="./contactus.html">Contact US</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assests/image/banner-1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assests/image/banner-2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assests/image/banner-3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assests/image/banner-4.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assests/image/banner-5.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assests/image/banner-6.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assests/image/banner-7.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assests/image/banner-8.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assests/image/banner-10.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assests/image/banner-11.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assests/image/banner-12.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="aboutUniversityContainer  py-3">
+            <div class="container lg-11">
+                <div class="row">
+                    <div class="col">
+                        <div class="abboutUniversity">
+                            <div class="aboutuniversityBody row py-4">
+                                <div class="aboutUniversityContent1 col-lg-6 " style="font-family: Roboto;">
+                                    <h1 class="fs-2">BISHOP APPASAMY COLLEGE</h1>
+
+                                    <h3>About Our University</h3>
+                                    <img src="./assests/image/silverjubilee.jpg" alt="" class="img-fluid w-25 mt-4">
+
+                                </div>
+                                <div class="aboutUniversityContent2 col-lg-6" style="font-family: Roboto;">
+                                    <p>It is my pleasure and privilege to present you CSI Bishop Appasamy College of
+                                        Arts & Science, Coimbatore for its achievements, accomplishments and honors
+                                        during the previous academic years. The past year has been one where we have
+                                        taken a giant leap towards achieving our goal and aspiration.
+                                    </p>
+                                    <p>Our road to success can be attributed to a strong focus on achieving excellence
+                                        in learning and enhancing the team strengths.</p>
+                                    <a href="#" class="btn  py-2  mx-2  mt-3 px-3 "
+                                        style="color: rgb(255, 255, 255); background-color: #353688; border-radius: 2rem; font-family: Roboto; font-size: 1rem; ">Read
+                                        More</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+        <!-- <section class="videoContainer bg-secondary py-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <div class="videoBody row py-5">
+                            <div class="videoContent col-lg-12    ">
+                                <video src=""></video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- <section class="missionContainer bg-light ">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col">
+                        <div class="mission">
+                            <div class="missionBody row py-5">
+                                <div class="missionCard col-lg-4 px-5" style="font-family: Roboto; font-weight: 300;">
+                                    <div class="missionCard1 py-2 ">
+
+                                        <a href="">Message from principal</a>
+                                    </div>
+                                    <div class="missionCard1 py-2">
+                                        <a href="">Message from principal</a>
+
+
+                                    </div>
+                                    <div class="missionCard1 py-2">
+
+                                        <a href="">Message from principal</a>
+                                    </div>
+                                    <div class="missionCard1 py-2">
+
+                                        <a href="">Message from principal</a>
+
+                                    </div>
+                                    <div class="missionCard1 py-2">
+
+                                        <a href="">Message from principal</a>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="missionImage col-lg-4">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="missionContent col-lg-4 align-content-center"
+                                    style="font-family:Roboto; font-size: 1rem; font-weight: 300;">
+                                    <h5>Our Mission</h5>
+                                    <p>The mission of Bishop Appasamy College is to be an international centre of
+                                        education for professionally needy youth, by providing professional and value
+                                        based teaching and individual care, enhanced with community development by being
+                                        role models of international standards.</p>
+                                    <button href="#" class="      "
+                                        style="color: rgb(255, 255, 255); background-color: rgb(107, 148, 209); border-radius: 2rem;font-family:Roboto; border-color: rgb(255, 255, 255);  ; ">Read
+                                        Me</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+
+        <body>
+            <div class="mission-warp pt-80 bg-FAF6F6" style="background-color: #faf6f6;">
+                <div class="container py-3">
+                    <div class="row">
+                        <div class="col-lg-4 mt-4">
+                            <div class="mission-tab  " id="myTab3" role="tablist">
+                                <a class="tablinks mt-4" id="nz-tab1" href="#nz-tab1" data-bs-toggle="tab"
+                                    data-bs-target="#nz-tab1-pane" role="tab" aria-controls="nz-tab1-pane"
+                                    aria-selected="false" tabindex="-1" style="text-decoration: none;">
+                                    <div class="mission-tab-btn  d-flex   b "
+                                        style="background-color: #ffffff;  font-family: Roboto; color: #525271;">
+                                        Message From Bishop <div class="icon ">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="tablinks " id="nz-tab2" href="#nz-tab2" data-bs-toggle="tab"
+                                    data-bs-target="#nz-tab2-pane" role="tab" aria-controls="nz-tab2-pane"
+                                    aria-selected="false" tabindex="-1" style="text-decoration: none;">
+                                    <div class="mission-tab-btn  "
+                                        style="background-color: #ffffff;  font-family: Roboto; color: #525271;">
+                                        Message Form secretary <div class="icon">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="tablinks" id="nz-tab3" href="#nz-tab3" data-bs-toggle="tab"
+                                    data-bs-target="#nz-tab3-pane" role="tab" aria-controls="nz-tab3-pane"
+                                    aria-selected="false" tabindex="-1" style="text-decoration: none;">
+                                    <div class="mission-tab-btn "
+                                        style="background-color: #ffffff;  font-family: Roboto; color: #525271;">
+                                        Message Form Principal <div class="icon">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="tablinks active" id="nz-tab4" href="#nz-tab4" data-bs-toggle="tab"
+                                    data-bs-target="#nz-tab4-pane" role="tab" aria-controls="nz-tab4-pane"
+                                    aria-selected="true" style="text-decoration: none;">
+                                    <div class="mission-tab-btn "
+                                        style="background-color: #ffffff;  font-family: Roboto; color: #525271; ">
+                                        Vision <div class="icon">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="tablinks" id="nz-tab5" href="#nz-tab5" data-bs-toggle="tab"
+                                    data-bs-target="#nz-tab5-pane" role="tab" aria-controls="nz-tab5-pane"
+                                    aria-selected="false" tabindex="-1" style="text-decoration: none;">
+                                    <div class="mission-tab-btn "
+                                        style="background-color: #ffffff; font-family: Roboto; color: #525271;">
+                                        Mission <div class="icon">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tabcontent tab-pane fade" id="nz-tab1-pane" role="tabpanel" tabindex="0"
+                                    aria-labelledby="nz-tab1">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="mission-image reveal2 active">
+                                                <img decoding="async" src="./assests/image/bishop.png" alt="image"
+                                                    class="img-fluid ">
+                                                <img decoding="async"
+                                                    src="https://themes.envytheme.com/falar/wp-content/uploads/2023/12/mission-shape1.png"
+                                                    class="mission-shape img-fluid" alt="image">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="mission-content">
+                                                <h3>Message from Bishop And Chairman</h3>
+                                                <div class="mission-box">
+                                                    <div class="icon">
+                                                        <img decoding="async"
+                                                            src="https://themes.envytheme.com/falar/wp-content/uploads/2023/12/mission1.svg"
+                                                            alt="image">
+                                                    </div>
+                                                    
+                                                    <p>It is my pleasure and privilege to present you CSI Bishop
+                                                        Appasamy College of Arts & Science, Coimbatore for its
+                                                        achievements, accomplishments and honors during the previous
+                                                        academic years. The past year has been one where we have taken a
+                                                        giant leap towards achieving our goal and aspiration. Our role
+                                                        to success can be attributed to a strong focus on achieving
+                                                        excellence in learning and enhancing the team strengths.</p>
+                                                    <a href="" class="mission-link  ">
+                                                        <span>View Details</span>
+                                                        <i class="ti ti-arrow-narrow-right"></i>
+                                                    </a>
+                                                </div>
+                                                <a href="" class="default-btn" style="text-decoration: none;">
+                                                    Take A Campus Tour <i class="ti ti-arrow-narrow-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabcontent tab-pane fade" id="nz-tab2-pane" role="tabpanel" tabindex="0"
+                                    aria-labelledby="nz-tab2">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="mission-image reveal2 active">
+                                                <img decoding="async" src="./assests/image/secartary.png" alt="image">
+                                                <img decoding="async"
+                                                    src="https://themes.envytheme.com/falar/wp-content/uploads/2023/12/mission-shape1.png"
+                                                    class="mission-shape" alt="image">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="mission-content">
+                                                <h3>Message from secretary</h3>
+                                                <div class="mission-box">
+                                                    <div class="icon">
+                                                        <img decoding="async"
+                                                            src="https://themes.envytheme.com/falar/wp-content/uploads/2023/12/mission1.svg"
+                                                            alt="image">
+                                                    </div>
+                                                   
+                                                    <p>The primary motto of our Esteemed institution is to quench the
+                                                        quest of knowledge of the students mind. We strive for
+                                                        development and at the Appaswamy's we trigger the overall growth
+                                                        and development of the human mind of our students lasting
+                                                        throughout their lifespan.</p>
+                                                    <a href="https://themes.envytheme.com/falar/about-overview/"
+                                                        class="mission-link">
+                                                        <span>View Details</span>
+                                                        <i class="ti ti-arrow-narrow-right"></i>
+                                                    </a>
+                                                </div>
+                                                <a href=""
+                                                    class="default-btn" style="text-decoration: none;">
+                                                    Take A Campus Tour <i class="ti ti-arrow-narrow-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabcontent tab-pane fade" id="nz-tab3-pane" role="tabpanel" tabindex="0"
+                                    aria-labelledby="nz-tab3">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="mission-image reveal2 active">
+                                                <img decoding="async"
+                                                    src="./assests/image/principal.PNG"
+                                                    alt="image">
+                                                <img decoding="async"
+                                                    src="https://themes.envytheme.com/falar/wp-content/uploads/2023/12/mission-shape1.png"
+                                                    class="mission-shape" alt="image">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="mission-content">
+                                                <h3>Message From Principal</h3>
+                                                <div class="mission-box">
+                                                    <div class="icon">
+                                                        <img decoding="async"
+                                                            src="https://themes.envytheme.com/falar/wp-content/uploads/2023/12/mission1.svg"
+                                                            alt="image">
+                                                    </div>
+                                                   
+                                                    <p>Education empowers an individual to be a person of excellence in
+                                                        competence, conscience and compassion. We impart holistic
+                                                        education by grooming the students to become great personalities
+                                                        and to place them in higher positions. We are able to achieve
+                                                        this with the vibrant team of dedicated and committed faculty
+                                                        members.</p>
+                                                    <a href=""
+                                                        class="mission-link">
+                                                        <span>View Details</span>
+                                                        <i class="ti ti-arrow-narrow-right"></i>
+                                                    </a>
+                                                </div>
+                                                <a href=""
+                                                    class="default-btn" style="text-decoration: none;">
+                                                    Take A Campus Tour <i class="ti ti-arrow-narrow-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabcontent tab-pane fade active show" id="nz-tab4-pane" role="tabpanel"
+                                    tabindex="0" aria-labelledby="nz-tab4">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="mission-image reveal2 active">
+                                                <img decoding="async"
+                                                    src="./assests/image/vision.png"
+                                                    alt="image">
+                                                <img decoding="async"
+                                                    src="https://themes.envytheme.com/falar/wp-content/uploads/2023/12/mission-shape1.png"
+                                                    class="mission-shape" alt="image">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="mission-content">
+                                                <h3>Vision</h3>
+                                                <div class="mission-box">
+                                                    <div class="icon">
+                                                        <img decoding="async"
+                                                            src="https://themes.envytheme.com/falar/wp-content/uploads/2023/12/mission1.svg"
+                                                            alt="image">
+                                                    </div>
+                                                    
+                                                    <p>To be an international center of excellence in character
+                                                        formation, intellectual growth and community development,
+                                                        building citizens for the nation.</p>
+                                                    <a href=""
+                                                        class="mission-link">
+                                                        <span>View Details</span>
+                                                        <i class="ti ti-arrow-narrow-right"></i>
+                                                    </a>
+                                                </div>
+                                                <a href=""
+                                                    class="default-btn" style="text-decoration: none;">
+                                                    Take A Campus Tour <i class="ti ti-arrow-narrow-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabcontent tab-pane fade" id="nz-tab5-pane" role="tabpanel" tabindex="0"
+                                    aria-labelledby="nz-tab5">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="mission-image reveal2 active">
+                                                <img decoding="async"
+                                                    src="./assests/image/mission.png"
+                                                    alt="image" style="width: 100%; height: 489;">
+                                                <img decoding="async"
+                                                    src="https://themes.envytheme.com/falar/wp-content/uploads/2023/12/mission-shape1.png"
+                                                    class="mission-shape" alt="image">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="mission-content">
+                                                <h3>Mission</h3>
+                                                <div class="mission-box">
+                                                    <div class="icon">
+                                                        <img decoding="async"
+                                                            src="https://themes.envytheme.com/falar/wp-content/uploads/2023/12/mission1.svg"
+                                                            alt="image">
+                                                    </div>
+                                                    
+                                                    <p>The mission of Bishop Appasamy College is to be an international
+                                                        centre of education for professionally needy youth, by providing
+                                                        professional and value based teaching and individual care,
+                                                        enhanced with community development by being role models of
+                                                        international standards.</p>
+                                                    <a href=""
+                                                        class="mission-link" style="text-decoration: none;">
+                                                        <span>View Details</span>
+                                                        <i class="ti ti-arrow-narrow-right"></i>
+                                                    </a>
+                                                </div>
+                                                <a href=""
+                                                    class="default-btn" style="text-decoration: none;">
+                                                    Take A Campus Tour <i class="fa-solid fa-arrow-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bootstrap JS -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            <script>
+                // Add hover functionality for tabs
+                document.querySelectorAll('.nav-link').forEach(tab => {
+                    tab.addEventListener('mouseenter', function () {
+                        const tabPaneId = this.getAttribute('href').replace('#', '');
+                        const tabPane = document.getElementById(tabPaneId);
+
+                        // Activate the hovered tab
+                        document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+                        this.classList.add('active');
+
+                        // Show the corresponding tab content
+                        document.querySelectorAll('.tab-pane').forEach(content => content.classList.remove('show', 'active'));
+                        tabPane.classList.add('show', 'active');
+                    });
+                });
+            </script>
+        </body>
+
+
+
+
+
+
+
+        <section class="exploreContainer py-5">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col">
+                        <div class="explore">
+                            <div class="exploreBody row py-4" style="font-family: Roboto;">
+                                <div class="exploreContent col-lg-8 align-content-center">
+                                    <h3 class=" fs-1">Explore Majors & <br> Programmss</h3>
+                                    <p class="fs-5">Choose From 1000 Undergraduate And Graduate Majors</p>
+                                </div>
+                                <div class="exploreCard col-lg-4 py-1 px-5" style="font-family: Roboto;">
+                                    <div class="exploreCard1 py-2 x-2 bg-light  ">
+                                        <a href="">UG Programmes</a>
+                                    </div>
+                                    <div class="exploreCard1 py-2 px-2">
+                                        <a href="">PG Programmes</a>
+                                    </div>
+                                    <div class="exploreCard1 py-2 px-2">
+                                        <a href="">Research Programmes</a>
+                                    </div>
+                                    <div class="exploreCard1 py-1 px-2">
+                                        <a href="">Doctoral Programmes</a>
+                                    </div>
+                                    <div class="exploreCard1 py-1 px-2">
+                                        <a href="">Certificate coureses</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="placementContainer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <div class="placement">
+                            <div class="placementBody row d-flex-col" style="justify-content: center;">
+                                <div class="placementHeading col-lg-12 text-center py-5" style="font-family: Roboto;">
+                                    <h3>OUR TOP RECRUITERS</h3>
+                                </div>
+                            </div>
+                            <div class="placementImage row">
+                                <div class="col-lg-12 d-flex" style="justify-content: center;">
+                                    <div class="image1 col-lg-2 col-sm-3"><img
+                                            src="./assests/image/wipro-removebg-preview.png" alt="" class="img-fluid ">
+                                    </div>
+                                    <div class="image2 col-lg-2 col-sm-3"><img src="./assests/image/microsoft.jpg"
+                                            alt="" class="img-fluid " style=""></div>
+                                    <div class="image3 col-lg-2 col-sm-3"><img
+                                            src="./assests/image/Dell-Logo-removebg-preview.png" alt=""
+                                            class="img-fluid "></div>
+                                    <div class="image4 col-lg-2 col-sm-3"><img
+                                            src="./assests/image/Samsung_logo_blue (5).jpg" alt="" class="img-fluid ">
+                                    </div>
+                                    <div class="image5 col-lg-2 col-sm-3"> <img
+                                            src="./assests/image/Infosys_logo.svg.jpg" alt="" class="img-fluid ">
+                                    </div>
+                                    <div class="image6 col-lg-2 col-sm-3"><img src="./assests/image/tata.jpg" alt=""
+                                            class=" img-fluid ">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="placementImage row py-5 d-flex" style="justify-content: center;">
+                                <div class="col-lg-12 d-flex" style="justify-content: center;">
+                                    <div class="images1 col-lg-2 col-sm-4 col-md-6"><img
+                                            src="./assests/image/radision.png" alt="" class=" img-fluid ">
+                                    </div>
+                                    <div class="images2 col-lg-2 col-sm-4 col-md-6"><img
+                                            src="./assests/image/oberoi.png" alt="" class=" img-fluid ">
+                                    </div>
+                                    <div class="images3 col-lg-2 col-sm-4 col-md-6 "><img
+                                            src="./assests/image/double tree.jpg" alt="" class=" img-fluid ">
+                                    </div>
+                                    <div class="images4 col-lg-2 col-sm-4 col-md-6"><img
+                                            src="./assests/image/four seasons.png" alt="" class=" img-fluid ">
+                                    </div>
+                                    <div class="images5 col-lg-2 col-sm-4 col-md-6"><img
+                                            src="./assests/image/Crowne_Plaza_logo.svg.jpg" alt="" class=" img-fluid ">
+                                    </div>
+                                    <div class="images6 col-lg-2 col-sm-4 col-md-6"><img src="./assests/image/taj.jpg"
+                                            alt="" class=" img-fluid ">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="eventContainer py-5">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col">
+                        <div class="event">
+                            <div class="eventBody row py-5 ">
+                                <div class="eventContent col-lg-4 px-3" style="font-family: Roboto;">
+                                    <h4>EVENTS</h4>
+                                    <img src="./assests/study2.webp" alt="">
+                                    <p class="py-2">The mission of Falar is to serve as a digital gateway and
+                                        information hub for all members of the university community.</p>
+                                    <p>2:30 pm-3.30pm</p>
+                                </div>
+                                <div class="eventContent1 col-lg-4  px-3 mt-5" style="font-family: Roboto;">
+
+
+
+                                    <img src="./assests/study2.webp" alt="">
+                                    <p class="py-2 ">The mission of Falar is to serve as a digital gateway and
+                                        information hub for all members of the university community.</p>
+                                    <p>2:30 pm-3.30pm</p>
+                                </div>
+                                <div class="eventContent1 col-lg-4 mx-auto " style="font-family: Roboto;">
+                                    <div class="eventBut d-flex"
+                                        style="align-content:flex-end; justify-content: end; padding-right: 2rem;">
+                                        <button class=""
+                                            style="border-radius: 2rem; padding: 0.5rem 1.5rem; background-color: #353688; border-color: aliceblue; color: rgb(255, 255, 255);">Read
+                                            more</button>
+                                    </div>
+
+                                    <img src="./assests/study2.webp" alt="">
+                                    <p class="py-2">The mission of Falar is to serve as a digital gateway and
+                                        information hub for all members of the university community..</p>
+                                    <p>2:30 pm-3.30pm</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="partnershipContainer py-4">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col">
+                        <div class="partnershipBody row">
+                            <div class="partnershipContent col-lg-6 ms-auto" style="font-family: Roboto;">
+                                <h3>Tie up and Partnership </h3>
+
+
+                            </div>
+                            <div class="partnershipContent1 col-lg-6" style="font-family: Inter;">
+                                <h3>Information for International student</h3>
+                                <p>The mission of Falar is to serve as a digital gateway and information hub for all
+                                    members of the university community.</p>
+                                <p>Additionally, a university website seeks to foster a sense of community and
+                                    collaboration by facilitating communication and engagement among students, faculty,
+                                    alumni, and prospective students.</p>
+                                <ul class="information-list " style="font-family: Inter;">
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        Full time programs for the International students.
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        Part time programs with stay.
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        Job opportunities for the best results.
+                                    </li>
+                                </ul>
+
+                                <button class=" buti py-2"
+                                    style="background-color:#353688; border-color: rgb(255, 255, 255); border-radius: 2rem; padding: 1rem 1rem; color: rgb(247, 247, 247);">Contact
+                                    Form</button>
+
+                                <button class=" what py-2 pro"
+                                    style="background-color: rgb(255, 72, 0); border-color:rgb(255, 255, 255); border-radius: 2rem; padding: 1rem 1rem; color: #ffffff; ">Program
+                                    Availability</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="fun-fact-warp py-5">
+            <div class="container">
+                <div class="row   g-4 d-flex-col" style="">
+                    <div class="col-lg-3  col-sm-3 col-md-6 d-flex" data-cue="slideInUp" data-show="true"
+                        style=" animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+                        <div class="fun-fact-card">
+                            <div class="d-flex align-items-center">
+                                <div class="icon">
+                                    <div class="icon style" style="padding-right: 0.5rem;">
+                                        <img decoding="async" src="./assests/image/fun-fact1.svg" class="mission-shape"
+                                            alt="image">
+                                    </div>
+                                </div>
+                                <h2 class="counter">20,000</h2>
+                                <h2 class="plus">+</h2>
+                            </div>
+                            <p class="mt-3" style="font-family: Inter;color:#525271;"> Students Graduated </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3  col-sm-3 col-md-6  d-flex" data-cue="slideInUp" data-show="true"
+                        style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 180ms; animation-direction: normal; animation-fill-mode: both;">
+                        <div class="fun-fact-card">
+                            <div class="d-flex align-items-center">
+                                <div class="icon">
+                                    <div class="icon style" style="padding-right: 1rem;">
+                                        <img decoding="async" src="./assests/image/fun-fact2.svg" class="mission-shape"
+                                            alt="image">
+                                    </div>
+                                </div>
+                                <h2 class="counter">100</h2>
+                                <h2 class="plus">+</h2>
+                            </div>
+                            <p class="mt-3" style="font-family: Inter;color:#525271;">Programs Available For The
+                                Students</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3  col-sm-3 col-md-6  d-flex" data-cue="slideInUp" data-show="true"
+                        style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 360ms; animation-direction: normal; animation-fill-mode: both;">
+                        <div class="fun-fact-card">
+                            <div class="d-flex align-items-center">
+                                <div class="icon">
+                                    <div class="icon style" style="padding-right: 0.5rem;">
+                                        <img decoding="async" src="./assests/image/fun-fact3.svg" class="mission-shape"
+                                            alt="image">
+                                    </div>
+                                </div>
+                                <h2 class="counter">25</h2>
+                                <h2 class="plus">+</h2>
+                              
+                            </div>
+                            <p class="mt-3" style="font-family:Inter;color:#525271;">Years Of Glorious History</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3  col-sm-3 col-md-6 d-flex" data-cue="slideInUp" data-show="true"
+                        style="animation-name: slideInUp; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 540ms; animation-direction: normal; animation-fill-mode: both;">
+                        <div class="fun-fact-card">
+                            <div class="d-flex align-items-center">
+                                <div class="icon">
+                                    <div class="icon style " style="padding-right: 1rem;">
+                                        <img decoding="async" src="./assests/image/fun-fact4.svg" class="mission-shape"
+                                            alt="image">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <p class="mt-3" style="font-family:Inter; color: #525271;">Heart of the city</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            // Counter animation script
+            const counters = document.querySelectorAll('.counter');
+            const duration = 600; // Total animation duration in milliseconds
+    
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target'); // Get the target value
+                const increment = target / (duration / 20000); // Calculate increment based on duration and interval
+    
+                const updateCounter = () => {
+                    const current = +counter.innerText; // Parse the current value
+                    if (current < target) {
+                        counter.innerText = Math.ceil(current + increment); // Update value
+                        setTimeout(updateCounter, 9000); // Repeat until target is reached
+                    } else {
+                        counter.innerText = target; // Ensure the exact target is displayed
+                    }
+                };
+    
+                updateCounter();
+            });
+        </script> -->
+
+    </main>
+    <footer>
+        <div class="aboutContainer py-5" style="background-color:#525271; ">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col">
+                        <div class="about">
+                            <div class="aboutBody row py-4">
+                                <div class="aboutContent1 col-lg-4" style="font-family:Roboto;">
+                                    <h5>About Us</h5>
+                                    <p>Excellence in learning and enhancing the
+                                        team strengths.Our road to success can be
+                                        attributed to a strong focu</p>
+                                        <h3 class="" style="color: #ffffff; font-family: Roboto; font-size: 1.1rem;">AFFILATIONS & APPROVALS</h3>
+                                    <div class="d-flex gap-2">
+
+                                        <div class="col-lg-2" style="background-color: #525271;">
+                                            
+                                            <img src="./assests/image/AICTE-Logo-250x250-1.webp" alt="" class=""
+                                                style="width: 100%; height:80%; color: #525271; background-color: #525271"
+                                                ;>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <img src="./assests/image/iso1.jfif" alt="" class=""
+                                                style="width: 100%; height:80%;">
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <img src="./assests/image/UGC.png" alt="" style="width: 100%; height: 80%;">
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <img src="./assests/image/NAAC_LOGO.png" alt=""
+                                                style="width: 100%; height: 90%;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="aboutContent2 col-lg-2 ">
+                                    <ul class="links" style="font-family: Roboto;">
+                                        <h5>LINKS</h5>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Media</a></li>
+                                        <li><a href="#">Gallery</a></li>
+                                        <li><a href="#">Contacy Us</a></li>
+                                    </ul>
+                                </div>
+                                <div class="aboutContent3 col-lg-3">
+                                    <ul class="links" style="font-family: Roboto;">
+                                        <h5>OUR Courses</h5>
+                                        <li><a href="#">UG Programmes</a></li>
+                                        <li><a href="#">PG Programmes</a></li>
+                                        <li><a href="#">Research Programmesa></li>
+                                        <li><a href="#">Doctoral Programmes</a></li>
+                                        <li><a href="#">Certificate coureses</a></li>
+                                    </ul>
+                                </div>
+                                <div class="aboutContent4 col-lg-3" style="font-family:Roboto; ">
+                                    <h5>CONTACT US</h5>
+                                    <p>BISHOP APPASAMY COLLEGE</p>
+                                    <p>#129, Race Course,
+                                        Coimbatore - 641 018.</p>
+                                    <ul class="list-inline">
+                                        <li class="m-0 pl-10 pr-10 py-2" style="color: rgb(37, 117, 51);"> <i
+                                                class="fa fa-phone text-theme-colored2 mr-5"></i> <a href="#"
+                                                style="color: #cccccc; text-decoration: none; "> +91 - 422 - 2221840,
+                                                2222247,</a> </li>
+                                        <li class="m-0 pl-10 pr-10 py-2" style="color: rgb(37, 117, 51);"> <i
+                                                class="fa-brands fa-whatsapp  mr-5"></i> <a href="#"
+                                                style="color: #cccccc; text-decoration: none;">info@csibacas.org</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+        // Add hover functionality for tabs
+        document.querySelectorAll('.nav-link').forEach(tab => {
+            tab.addEventListener('mouseenter', function () {
+                const tabPaneId = this.getAttribute('href').replace('#', '');
+                const tabPane = document.getElementById(tabPaneId);
+
+                // Activate the hovered tab
+                document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+                this.classList.add('active');
+
+                // Show the corresponding tab content
+                document.querySelectorAll('.tab-pane').forEach(content => content.classList.remove('show', 'active'));
+                tabPane.classList.add('show', 'active');
+            });
+        });
+    </script>
+</body>
+
+</html>
